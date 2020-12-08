@@ -26,6 +26,12 @@
           "repo": "get_ccle",
           "glob": "/"
         }
+      },
+      {
+        "pfs": {
+          "repo": "downAnnotations",
+          "glob": "/"
+        }
       }
     ]
   }
