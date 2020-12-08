@@ -1,0 +1,26 @@
+{
+  "pipeline": {
+    "name": "get_cleveland"
+  },
+  "transform": {
+    "image": "bhklab/radiogx:v1",
+    "cmd": [
+      "Rscript", 
+      "/pfs/getCleveland/get_Cleveland.R"]
+    },
+  
+  "resource_requests": {
+    "memory": "200M"
+  },
+  "input": {
+    "cross": [
+      {
+        "git": {
+          "url": "https://github.com/BHKLAB-Pachyderm/getCleveland.git",
+          "name": "",
+          "branch": "main"
+        }
+      }
+    ]
+  }
+}
